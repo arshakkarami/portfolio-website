@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5ff;
+    color: #1f1235;
+    line-height: 1.6;
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #e5d9ff;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: bold;
+}
+
+nav div:first-child span:first-child {
+    background-color: #3b0764;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div:last-child {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4b3b63;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #7c3aed;
+}
+
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 20px;
+}
+
+section:first-of-type {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+    color: #3b0764;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    max-width: 700px;
+    color: #5f5274;
+    margin-bottom: 18px;
+}
+
+section:first-of-type a,
+#contact a {
+    display: inline-block;
+    background-color: #3b0764;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+li {
+    background-color: white;
+    border: 1px solid #e5d9ff;
+    padding: 18px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#projects div {
+    background-color: white;
+    border: 1px solid #e5d9ff;
+    padding: 22px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #e5d9ff;
+    color: #5f5274;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    nav div:last-child {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 50px 18px;
+    }
+}
